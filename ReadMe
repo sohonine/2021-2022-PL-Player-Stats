@@ -1,0 +1,6 @@
+This code will tell you the total amount of yellow and red cards, goals, penalties, and different teams along with the individual stats of any 
+player who played in the 2021-2022 Premiere League Season. The code first calculates the total number of yellow and red cards, goals, penalties, 
+and goals by using the sum() function on their respective section of the DataFrame. This is followed by the individual stats of any PL player 
+inputted by typing their last name. These stats include their team, jersey number, position, appearances, substitutions, goals, penalties, 
+yellow cards, and red cards. If no name is entered into the program, the league's stats of total yellow cards, red cards, goals, penalties and goals
+will all still be outputted but it will print out a message saying "No player found with that last name."
