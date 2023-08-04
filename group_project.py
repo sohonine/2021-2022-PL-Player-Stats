@@ -16,20 +16,23 @@ print("Total different teams: ", total_teams)
 
 user_input = input("Give me the last name of a player: ")
 
-player_row = player_stats[player_stats['Player'].str.contains(user_input, case=False)]
-
-if len(player_row) == 0:
-    print("No player found with that last name.")
+if not user_input:
+    print("No player name entered.")
 else:
-    row_index = player_row.index[0]
-    player_info = player_row.iloc[0]
-    print("Team: ", player_info["Team"])
-    print("Jersey Number: ", player_info["JerseyNo"])
-    print("Position: ", player_info["Position"])
-    print("Appearances: ", player_info["Apearances"])
-    print("Substitutions: ", player_info["Substitutions"])
-    print("Goals: ", player_info["Goals"])
-    print("Penalties: ", player_info["Penalties"])
-    print("Yellow cards: ", player_info["YellowCards"])
-    print("Red cards: ", player_info["RedCards"])
-    print("Red cards: ", player_info["RedCards"])
+    player_row = player_stats[player_stats['Player'].str.contains(user_input, case=False)]
+
+    if len(player_row) == 0:
+        print("No player found with that last name.")
+    else:
+        row_index = player_row.index[0]
+        player_info = player_row.iloc[0]
+        print("Team: ", player_info["Team"])
+        print("Jersey Number: ", player_info["JerseyNo"])
+        print("Position: ", player_info["Position"])
+        print("Appearances: ", player_info["Apearances"])
+        print("Substitutions: ", player_info["Substitutions"])
+        print("Goals: ", player_info["Goals"])
+        print("Penalties: ", player_info["Penalties"])
+        print("Yellow cards: ", player_info["YellowCards"])
+        print("Red cards: ", player_info["RedCards"])
+        print("Red cards: ", player_info["RedCards"])
